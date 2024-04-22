@@ -1,0 +1,9 @@
+
+*/AssemblyCompiler/bin
+*/AssemblyCompiler/obj
+
+# Visual Studio
+.vs
+*/Debug/
+*/x64/Debug
+/Debug
