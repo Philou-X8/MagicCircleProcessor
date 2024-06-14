@@ -56,7 +56,7 @@ namespace AssemblyCompiler
             } 
             else if (newChar == ' ' ||  newChar == '\t')
             {
-                
+                // wait for caracter
             }
             else
             {
@@ -79,11 +79,16 @@ namespace AssemblyCompiler
             if (newChar >= 'a' && newChar <= 'z')
             {
                 _compStr += newChar;
-                if (_compStr.Length > 3) // longer than instruction, switch to 
+                if (_compStr.Length == 3) // instruction over
                 {
                     _context.ChangeState(new StateLabel(_context, _compStr)); // TODO: put right state
                 }
-                
+                else if (_compStr.Length > 3) // instruction too long
+                {
+                    // invalid input, too long
+                }
+
+
             }
             else if (newChar == ' ' || newChar == '\t')
             {
@@ -118,7 +123,6 @@ namespace AssemblyCompiler
             {
                 _context.ChangeState(new StateDefault(_context, _compStr)); // TODO: set proper state (instruction)
             }
-            
             else
             {
                 // error
