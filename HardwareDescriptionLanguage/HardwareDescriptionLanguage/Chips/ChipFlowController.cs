@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace HDL.Chips
 {
+    /**
+     * Based on the Sequencer's direction, set the chips in their apropriate mode of opperation.
+     * 
+     */
     internal class ChipFlowController : ChipBase
     {
         public ChipFlowController() : base(4, 4) {
@@ -21,6 +25,7 @@ namespace HDL.Chips
 
             // IN pins:
             // 0 - asm instruction
+            // 1 - Sequencer
 
             // OUT pins:
             // 0 - register mode
