@@ -2,6 +2,9 @@
 */AssemblyCompiler/bin
 */AssemblyCompiler/obj
 
+*/SimulationCPU/bin
+*/SimulationCPU/obj
+
 # Visual Studio
 .vs
 */Debug/
