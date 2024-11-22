@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimulationCPU.Chips
+namespace HDL.Chips
 {
-    internal class ChipFlowController : ChipModule
+    internal class ChipFlowController : ChipBase
     {
         public ChipFlowController() : base(4, 4) {
             flowProgress = 0;

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimulationCPU.Chips
+namespace HDL.Chips
 {
-    public class ChipExample : ChipModule
+    public class ChipExample : ChipBase
     {
         
         public ChipExample(int readSize, int writeSize) : base(readSize, writeSize) { }

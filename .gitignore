@@ -2,8 +2,8 @@
 */AssemblyCompiler/bin
 */AssemblyCompiler/obj
 
-*/SimulationCPU/bin
-*/SimulationCPU/obj
+*/HardwareDescriptionLanguage/bin
+*/HardwareDescriptionLanguage/obj
 
 # Visual Studio
 .vs

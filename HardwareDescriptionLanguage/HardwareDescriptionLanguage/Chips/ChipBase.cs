@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimulationCPU.Chips
+namespace HDL.Chips
 {
     public struct MonitorChannel
     {
@@ -20,7 +20,7 @@ namespace SimulationCPU.Chips
             write = false;
         }
     }
-    public class ChipModule
+    public class ChipBase
     {
         protected string ChipName;
         protected List<PinInstance?> readPins;
@@ -31,7 +31,7 @@ namespace SimulationCPU.Chips
         protected int readPinCount;
         protected int writePinCount;
 
-        public ChipModule()
+        public ChipBase()
         {
             ChipName = "Base Chip";
             readPinCount = 0;
@@ -41,7 +41,7 @@ namespace SimulationCPU.Chips
             activePins = new List<int>();
             resultPins = new List<int>();
         }
-        public ChipModule(int readSize, int writeSize)
+        public ChipBase(int readSize, int writeSize)
         {
             readPinCount = readSize;
             writePinCount = writeSize;
@@ -110,7 +110,7 @@ namespace SimulationCPU.Chips
         {
             List<List<int>> retList = new List<List<int>>();
             List<int> buffList = new List<int>();
-            if()
+            
             foreach (PinInstance? pin in readPins)
             {
                 buffList.Add((pin?.pin) ?? -1);

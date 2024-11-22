@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimulationCPU.Chips
+namespace HDL.Chips
 {
-    internal class ChipReadBuffer : ChipModule
+    internal class ChipReadBuffer : ChipBase
     {
         public ChipReadBuffer() : base (3,2) { }
         protected override void ComputeChip()

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimulationCPU.Chips
+namespace HDL.Chips
 {
-    internal class ChipRegister : ChipModule
+    internal class ChipRegister : ChipBase
     {
         List<List<int>> registers;
         List<int> register;
