@@ -22,7 +22,7 @@ namespace HDL.Chips
     }
     public class ChipBase
     {
-        protected string ChipName;
+        protected string chipName;
         protected List<PinInstance?> readPins;
         protected List<PinInstance?> writePins;
         protected List<int> activePins;
@@ -33,7 +33,7 @@ namespace HDL.Chips
 
         public ChipBase()
         {
-            ChipName = "Base Chip";
+            chipName = "Base Chip";
             readPinCount = 0;
             writePinCount = 0;
             readPins = new List<PinInstance?>();
@@ -43,6 +43,7 @@ namespace HDL.Chips
         }
         public ChipBase(int readSize, int writeSize)
         {
+            chipName = "Base Chip";
             readPinCount = readSize;
             writePinCount = writeSize;
             readPins = new List<PinInstance?>(readSize);

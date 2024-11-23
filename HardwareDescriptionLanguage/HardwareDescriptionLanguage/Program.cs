@@ -51,4 +51,12 @@ namespace HDL
             }
         }
     }
+    
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ChipExample testChip = new ChipExample(4, 4);
+        }
+    }
 }

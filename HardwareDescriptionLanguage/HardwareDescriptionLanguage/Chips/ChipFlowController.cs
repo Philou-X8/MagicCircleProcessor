@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace HDL.Chips
 {
+    
+
     /**
      * Based on the Sequencer's direction, set the chips in their apropriate mode of opperation.
      * 
